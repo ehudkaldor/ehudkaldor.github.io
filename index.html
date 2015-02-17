@@ -8,6 +8,7 @@
     <link rel="stylesheet" type="text/css" href="@routes.Assets.at("stylesheets/fullcalendar.css")">
   </head>
   <body id="body">
-    @helper.requireJs(core = routes.Assets.at("app/third/require.min.js").url, module = routes.Assets.at("app/javascript/main").url)
+    <script data-main="app/third/require.min.js" src="app/javascript/main"></script>
+    @helper.requireJs(core = routes.Assets.at("/app/third/require.min.js").url, module = routes.Assets.at("app/javascript/main").url)
   </body>
 </html>
